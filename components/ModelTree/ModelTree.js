@@ -10,7 +10,6 @@ const ModelTree = ({ glb, isCard }) => {
           ar
           ar-modes="webxr scene-viewer quick-look"
           camera-controls
-          //ios-src={}
           loading="auto"
         >
           <button
