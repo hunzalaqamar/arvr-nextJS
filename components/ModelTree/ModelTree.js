@@ -8,9 +8,9 @@ const ModelTree = ({ glb, isCard }) => {
           style={{ width: "100%" }}
           src={glb}
           ar
-          ar-modes="webxr scene-viewer quick-look"
+          ar-modes="scene-viewer webxr"
+          shadow-intensity="1"
           camera-controls
-          loading="auto"
         >
           <button
             slot="ar-button"
@@ -29,6 +29,7 @@ const ModelTree = ({ glb, isCard }) => {
           src={glb}
           loading="auto"
           camera-controls
+          shadow-intensity="1"
         ></model-viewer>
       )}
     </div>
