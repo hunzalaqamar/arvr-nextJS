@@ -7,8 +7,12 @@ const ModelTree = ({ glb, isCard }) => {
         <model-viewer
           style={{ width: "100%" }}
           src={glb}
+          bounds="tight"
+          environment-image="neutral"
           ar
           camera-controls
+          ar-modes="scene-viewer webxr quick-look"
+          shadow-intensity="1"
           magic-leap
           background-color="#FFF"
         >
@@ -27,9 +31,12 @@ const ModelTree = ({ glb, isCard }) => {
         <model-viewer
           style={{ width: "100%", height: "87vh" }}
           src={glb}
-          loading="auto"
+          bounds="tight"
+          environment-image="neutral"
           camera-controls
           shadow-intensity="1"
+          magic-leap
+          background-color="#FFF"
         ></model-viewer>
       )}
     </div>
