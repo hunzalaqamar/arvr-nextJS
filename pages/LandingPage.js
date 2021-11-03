@@ -1,5 +1,5 @@
 import React from "react";
-import companyLogo from "../public/assests/companylogo.png";
+import companyLogo from "../public/assests/companyLogo.png";
 import Header from "../components/Header/Header";
 import { companyWebsiteSrc } from "../constants/companyWebsite";
 import ItemCard from "../components/ItemCard/ItemCard";
