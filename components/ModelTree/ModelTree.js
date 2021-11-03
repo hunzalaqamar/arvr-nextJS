@@ -8,9 +8,9 @@ const ModelTree = ({ glb, isCard }) => {
           style={{ width: "100%" }}
           src={glb}
           ar
-          ar-modes="scene-viewer webxr"
-          shadow-intensity="1"
           camera-controls
+          magic-leap
+          background-color="#FFF"
         >
           <button
             slot="ar-button"
