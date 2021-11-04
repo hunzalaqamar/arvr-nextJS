@@ -5,10 +5,4 @@ export const AndroidObjs = [
   "Sheen_Chair",
   "Water_Bottle",
 ];
-export const IPhoneObjs = [
-  "Fender_Stratocaster",
-  "Lamp",
-  "Toy_Biplane",
-  "Toy_Drummer",
-  "Toy_Robot",
-];
+export const IPhoneObjs = ["Red_Chair", "Lamp", "Toy_Car", "Toy_Robot"];

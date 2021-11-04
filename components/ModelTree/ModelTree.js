@@ -10,6 +10,7 @@ const ModelTree = ({ glb, isCard }) => {
     urlMaker = "/assests/3d/" + glb + ".glb";
   }
   const posterMaker = "/assests/3d/" + glb + ".png";
+  console.log(urlMaker);
   return (
     <div>
       {isCard ? (
