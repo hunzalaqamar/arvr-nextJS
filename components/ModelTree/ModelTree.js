@@ -7,10 +7,11 @@ const ModelTree = ({ glb, isCard }) => {
         <model-viewer
           style={{ width: "100%" }}
           src={glb}
+          environment-image="neutral"
           ar
           camera-controls
+          ar-modes="scene-viewer webxr quick-look"
           shadow-intensity="1"
-          magic-leap
           background-color="#FFF"
         >
           <button
@@ -32,7 +33,6 @@ const ModelTree = ({ glb, isCard }) => {
           environment-image="neutral"
           camera-controls
           shadow-intensity="1"
-          magic-leap
           background-color="#FFF"
         ></model-viewer>
       )}
