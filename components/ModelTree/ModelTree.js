@@ -6,8 +6,8 @@ const ModelTree = ({ glb, isCard }) => {
       {isCard ? (
         <model-viewer
           style={{ width: "100%" }}
-          src={glb}
-          ios-src={"/assests/3d/Robot Helmet.usdz"}
+          src={"/assests/3d/toy_robot_vintage.usdz"}
+          ios-src={"/assests/3d/toy_robot_vintage.usdz"}
           environment-image="neutral"
           ar
           camera-controls
