@@ -6,8 +6,10 @@ const ModelTree = ({ glb, isCard }) => {
       {isCard ? (
         <model-viewer
           style={{ width: "100%" }}
-          src={"/assests/3d/toy_robot_vintage.usdz"}
-          ios-src={"/assests/3d/toy_robot_vintage.usdz"}
+          src={
+            "https://sketchfab.com/3d-models/dinosaur-fbx-5d618571be5e4a97ba3f31950530a06e"
+          }
+          ios-src={"/assests/3d/Robot Helmet.usdz"}
           environment-image="neutral"
           ar
           camera-controls
