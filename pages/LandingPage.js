@@ -18,7 +18,7 @@ function LandingPage() {
           isViewLarge={false}
         />
       </div>
-      <Row xs={1} md={2} lg={3} xl={4}>
+      <Row xs={1} md={2} lg={3} xl={4} className="w-100">
         {objs.map((objname) => (
           <Col key={objname}>
             <ItemCard GLBName={objname} />
