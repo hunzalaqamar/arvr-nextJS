@@ -21,7 +21,6 @@ function ItemCard({ GLBName }) {
       <div className="card mt-2" style={{ width: "19rem" }}>
         <div className="card-img-top">
           <ModelTree glb={UrlMaker} isCard={true} />
-          {/* <Image width={100} height={100} src={UrlMaker} /> */}
         </div>
         <div className="card-body text-center">
           <h5 className="card-title">{GLBName}</h5>
