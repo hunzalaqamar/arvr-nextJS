@@ -7,7 +7,7 @@ const ModelTree = ({ glb, isCard }) => {
         <model-viewer
           style={{ width: "100%" }}
           src={glb}
-          ios-src={"/assests/3d/Lamp.usdz"}
+          ios-src={"/assests/3d/Robot Helmet.usdz"}
           environment-image="neutral"
           ar
           camera-controls
