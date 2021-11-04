@@ -1,7 +1,14 @@
-export const objs = [
-  "Robot Helmet",
+export const AndroidObjs = [
+  "Robot_Helmet",
   "Lamp",
-  "Soccer Table",
-  "Sheen Chair",
-  "Water Bottle",
+  "Soccer_Table",
+  "Sheen_Chair",
+  "Water_Bottle",
+];
+export const IPhoneObjs = [
+  "Fender_Stratocaster",
+  "Lamp",
+  "Toy_Biplane",
+  "Toy_Drummer",
+  "Toy_Robot",
 ];

@@ -19,7 +19,7 @@ function Header({
         {isViewLarge && (
           <button
             type="button"
-            className="btn btn-outline-primary"
+            className="btn btn-primary"
             onClick={() => {
               router.push(`/LandingPage`);
             }}

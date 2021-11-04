@@ -15,18 +15,21 @@ const ModelTree = dynamic(
 
 function ItemCard({ GLBName }) {
   const router = useRouter();
-  const UrlMaker = "/assests/3d/" + GLBName + ".glb";
+  const tempCardName = GLBName.split("_");
+  let cardName = "";
+  tempCardName.length > 1 &&
+    (cardName = tempCardName[0] + " " + tempCardName[1]);
   return (
     <Container className="d-flex justify-content-center">
-      <div className="card mt-2" style={{ width: "19rem" }}>
+      <div className="card mt-2 rounded" style={{ width: "19rem" }}>
         <div className="card-img-top">
-          <ModelTree glb={UrlMaker} isCard={true} />
+          <ModelTree glb={GLBName} isCard={true} />
         </div>
         <div className="card-body text-center">
-          <h5 className="card-title">{GLBName}</h5>
+          <h5 className="card-title">{cardName || tempCardName}</h5>
           {!isMobileOnly && (
             <Button
-              variant="outline-primary"
+              variant="primary"
               onClick={() => router.push("/ViewInLarge/" + GLBName)}
             >
               View in Full Screen
