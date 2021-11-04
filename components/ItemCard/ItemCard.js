@@ -1,8 +1,11 @@
 import React from "react";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 import { Container, Button } from "react-bootstrap";
 import { isMobileOnly } from "react-device-detect";
 import { useRouter } from "next/router";
+import src from "../../public/assests/3d/Lamp.png";
+import ObjectRenderer from "../ObjectRenderer/ObjectRenderer";
 
 const ModelTree = dynamic(
   () => {
@@ -16,9 +19,11 @@ function ItemCard({ GLBName }) {
   const UrlMaker = "/assests/3d/" + GLBName + ".glb";
   return (
     <Container className="d-flex justify-content-center">
-      <div className="card mt-3" style={{ width: "19rem" }}>
+      <div className="card mt-2" style={{ width: "19rem" }}>
         <div className="card-img-top">
-          <ModelTree glb={UrlMaker} isCard={true} />
+          {/* <ModelTree glb={UrlMaker} isCard={true} /> */}
+          {/* <Image width={100} height={100} src={UrlMaker} /> */}
+          <ObjectRenderer glbSrc={UrlMaker} />
         </div>
         <div className="card-body text-center">
           <h5 className="card-title">{GLBName}</h5>
