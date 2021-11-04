@@ -5,11 +5,21 @@ import { companyWebsiteSrc } from "../constants/companyWebsite";
 import ItemCard from "../components/ItemCard/ItemCard";
 import { objs } from "../constants/3dObj";
 import { Col, Row } from "react-bootstrap";
+import dynamic from "next/dynamic";
+
+const ModelTree = dynamic(
+  () => {
+    return import("../components/ModelTree/ModelTree");
+  },
+  { ssr: false }
+);
 
 function LandingPage() {
   return (
     <div>
-      <div>
+      <ModelTree glb={"/assests/3d/Lamp.glb"} isCard={true} />
+
+      {/* <div>
         <Header
           logo={companyLogo}
           productName={"AR-VR"}
@@ -24,7 +34,7 @@ function LandingPage() {
             <ItemCard GLBName={objname} />
           </Col>
         ))}
-      </Row>
+      </Row> */}
     </div>
   );
 }
