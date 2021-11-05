@@ -12,7 +12,7 @@ const ModelTree = ({ glb, isCard }) => {
   }
   const posterMaker = "/assests/3d/" + glb + ".png";
   return (
-    <div className="w-100 h-100">
+    <div>
       {isCard ? (
         isIOS ? (
           <model-viewer
@@ -47,7 +47,14 @@ const ModelTree = ({ glb, isCard }) => {
         )
       ) : (
         <model-viewer
-          style={{ width: "100wh", height: "85vh", overflow: "auto" }}
+          style={{
+            width: "100vw",
+            height: "80vh",
+            overflow: "auto",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "4vh",
+          }}
           src={glb}
           bounds="tight"
           environment-image="neutral"
