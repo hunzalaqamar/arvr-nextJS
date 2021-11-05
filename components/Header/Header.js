@@ -15,7 +15,7 @@ function Header({
       className="autohide navbar navbar-light"
       style={{ backgroundColor: "#e3f2fd" }}
     >
-      <Container className=" mx-auto">
+      <Container className="mx-auto my-auto">
         {isViewLarge && (
           <button
             type="button"
