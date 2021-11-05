@@ -1,5 +1,6 @@
 import "@google/model-viewer";
 import { isIOS } from "react-device-detect";
+import ARButton from "../ARButton/ARButton";
 
 const ModelTree = ({ glb, isCard }) => {
   var urlMaker;
@@ -26,16 +27,7 @@ const ModelTree = ({ glb, isCard }) => {
             shadow-intensity="1"
             background-color="#FFF"
           >
-            <button
-              slot="ar-button"
-              className=" bg-white border rounded position-absolute font-weight-lighter"
-              style={{
-                top: "10px",
-                right: "10px",
-              }}
-            >
-              Activate AR
-            </button>
+            <ARButton btnSlot={"ar-button"} />
           </model-viewer>
         ) : (
           <model-viewer
@@ -50,16 +42,7 @@ const ModelTree = ({ glb, isCard }) => {
             shadow-intensity="1"
             background-color="#FFF"
           >
-            <button
-              slot="ar-button"
-              className=" bg-white border rounded position-absolute font-weight-lighter"
-              style={{
-                top: "10px",
-                right: "10px",
-              }}
-            >
-              Activate AR
-            </button>
+            <ARButton btnSlot={"ar-button"} />
           </model-viewer>
         )
       ) : (

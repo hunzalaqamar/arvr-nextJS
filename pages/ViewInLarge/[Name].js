@@ -26,7 +26,7 @@ function Name({ modelName }) {
           isViewLarge={true}
         />
       </div>
-      <div>
+      <div className="w-100 h-100 mx-auto my-auto">
         <ModelTree glb={model} isCard={false} />
       </div>
     </div>

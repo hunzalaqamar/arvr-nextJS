@@ -1,10 +1,17 @@
 import React from "react";
-import Image from "next/image";
 import dynamic from "next/dynamic";
 import { Container, Button } from "react-bootstrap";
-import { isMobileOnly } from "react-device-detect";
+import {
+  isAndroid,
+  isConsole,
+  isIOS,
+  isMobileOnly,
+  isSmartTV,
+  isTablet,
+  isWearable,
+  isWinPhone,
+} from "react-device-detect";
 import { useRouter } from "next/router";
-import src from "../../public/assests/3d/Lamp.png";
 
 const ModelTree = dynamic(
   () => {
@@ -27,14 +34,21 @@ function ItemCard({ GLBName }) {
         </div>
         <div className="card-body text-center">
           <h5 className="card-title">{cardName || tempCardName}</h5>
-          {!isMobileOnly && (
-            <Button
-              variant="primary"
-              onClick={() => router.push("/ViewInLarge/" + GLBName)}
-            >
-              View in Full Screen
-            </Button>
-          )}
+          {!isMobileOnly &&
+            !isWinPhone &&
+            !isTablet &&
+            !isSmartTV &&
+            !isWearable &&
+            !isIOS &&
+            !isAndroid &&
+            !isConsole && (
+              <Button
+                variant="primary"
+                onClick={() => router.push("/ViewInLarge/" + GLBName)}
+              >
+                View in Full Screen
+              </Button>
+            )}
         </div>
       </div>
     </Container>

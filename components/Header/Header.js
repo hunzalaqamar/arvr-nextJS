@@ -12,10 +12,10 @@ function Header({
   const router = useRouter();
   return (
     <nav
-      className="navbar navbar-light text-center"
+      className="autohide navbar navbar-light"
       style={{ backgroundColor: "#e3f2fd" }}
     >
-      <Container>
+      <Container className=" mx-auto">
         {isViewLarge && (
           <button
             type="button"
