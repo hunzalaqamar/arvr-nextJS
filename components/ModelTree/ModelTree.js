@@ -1,5 +1,5 @@
 import "@google/model-viewer";
-import { isAndroid, isIOS } from "react-device-detect";
+import { isAndroid, isIOS, isMacOs } from "react-device-detect";
 import ARButton from "../ARButton/ARButton";
 
 const ModelTree = ({ glb, isCard }) => {
